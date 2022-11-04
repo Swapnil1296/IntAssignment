@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Col, Form, Modal, Row } from "react-bootstrap";
+import { Button, Col, Form, Modal, Nav, Row } from "react-bootstrap";
 import { useFormik } from "formik";
 import Select from "react-select";
 import { StudentData_Validation } from "../schema/yup_validation_section_one";
@@ -48,18 +48,15 @@ const StudentData = () => {
   const Navigate = useNavigate();
   const LoggedData = useSelector((state) => state.isLoggedIng);
   const handledLogOut = () => {
-    window.localStorage.clear();
+    // window.localStorage.clear();
     dispatch({
       type: "LOGOUT",
     });
+    console.log("logOut in student data");
+    Navigate("/")
   };
 
-  useEffect(() => {
-    let login = LoggedData;
-    if (login === false) {
-      Navigate("/");
-    }
-  }, [LoggedData]);
+
 
   const handleRedirect = () => {
     handleClose();
@@ -82,7 +79,7 @@ const StudentData = () => {
         <Col>
           <Button
             className="btn btn-danger m-3"
-            onClick={() => handledLogOut()}
+            onClick={ handledLogOut}
           >
             LogOut
           </Button>

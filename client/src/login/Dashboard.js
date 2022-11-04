@@ -8,21 +8,22 @@ const Dashboard = () => {
   // console.log("Auth is :-", data);
   const Navigate = useNavigate();
   const LoggedData = useSelector((state) => state.isLoggedIng);
-  const dispatch=useDispatch()
+  const dispatch = useDispatch();
   const handledLogOut = () => {
-    window.localStorage.clear();
+    // window.localStorage.clear();
     dispatch({
       type: "LOGOUT",
     });
+    console.log("logOut in student data");
+    Navigate("/");
   };
 
-  useEffect(() => {
-    let login = LoggedData;
-    if (login === false) {
-      Navigate("/");
-    }
-  }, [LoggedData]);
+  // useEffect(() => {
+  //   let login = LoggedData;
+  //   if (login === false) {
 
+  //   }
+  // }, [LoggedData]);
 
   return (
     <>
@@ -31,10 +32,7 @@ const Dashboard = () => {
         style={{ height: "60px" }}
       >
         <Col>
-          <Button
-            className="btn btn-danger m-3"
-            onClick={() => handledLogOut()}
-          >
+          <Button className="btn btn-danger m-3" onClick={handledLogOut}>
             LogOut
           </Button>
         </Col>
