@@ -1,0 +1,187 @@
+{
+  "part-1": [
+    {
+      "id": 1,
+      "subject": "English",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 2,
+      "subject": "Math",
+      "FA": 57,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 3,
+      "subject": "Sanskrit/Urdu",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 4,
+      "subject": "Mithili",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 5,
+      "subject": "EVS",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 6,
+      "subject": "Social Study",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 7,
+      "subject": "Computer",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 8,
+      "subject": "Moral",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 9,
+      "subject": "GK",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 10,
+      "subject": "Conversation",
+      "FA": 55,
+      "oral_1": 50,
+      "BA": 77,
+      "oral_2": 88
+    },
+    {
+      "id": 11,
+      "subject": "Drawings",
+      "FA": null,
+      "oral_1": null,
+      "BA": null,
+      "oral_2": null
+    }
+  ],
+  "part-2": [
+    {
+      "id": 1,
+      "topic": "Development and Maturity",
+      "grade": "A"
+    },
+    {
+      "id": 1,
+      "topic": "Responsibility ",
+      "grade": "A"
+    },
+    {
+      "id": 1,
+      "topic": "Self Confidence",
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "topic": "Participation In Group Work",
+      "grade": "A+"
+    },
+    {
+      "id": 3,
+      "topic": "Neatness",
+      "grade": "B"
+    },
+    {
+      "id": 4,
+      "topic": "Music",
+      "grade": "C"
+    },
+    {
+      "id": 5,
+      "topic": "Dicipline",
+      "grade": "C+"
+    },
+    {
+      "id": 6,
+      "topic": "Hand Work",
+      "grade": "C"
+    },
+    {
+      "id": 7,
+      "topic": "Attitude Towards Work",
+      "grade": "C"
+    },
+    {
+      "id": 8,
+      "topic": "Craft",
+      "grade": "C"
+    },
+    {
+      "id": 9,
+      "topic": "Regularigty and Punctuality",
+      "grade": "B"
+    }
+  ],
+  "part-3": [
+    {
+     "id":0,
+     "rank":"91-100",
+     "grades":"A 1",
+     "remark":"Excellent"
+    }, {
+      "id":0,
+      "rank":"81-90",
+      "grades":"A 2",
+      "remark":"Very Good"
+     }, {
+      "id":0,
+      "rank":"71-80",
+      "grades":"B 1",
+      "remark":"Good"
+     }, {
+      "id":0,
+      "rank":"61-70",
+      "grades":"B 2",
+      "remark":"Good"
+     }, {
+      "id":0,
+      "rank":"51-60",
+      "grades":"C 1",
+      "remark":"Satisfactory"
+     }, {
+      "id":0,
+      "rank":"41-50",
+      "grades":"C 2",
+      "remark":"Unsatisfactory"
+     }, {
+      "id":0,
+      "rank":"Below 40",
+      "grades":"D",
+      "remark":"Fail/Pass"
+     } 
+  ]
+}
