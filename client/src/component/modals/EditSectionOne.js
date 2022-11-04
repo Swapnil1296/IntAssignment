@@ -7,13 +7,7 @@ import { Section_One_Validation } from "../schema/yup_validation_section_one";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
-const initialValues = {
-  subject: "",
-  first_anual_marks: "",
-  first_oral_marks: "",
-  second_anual_marks: "",
-  second_oral_marks: "",
-};
+
 const options = [
   { value: "english", label: "English" },
   { value: "math", label: "Math" },
@@ -36,10 +30,17 @@ const EditSectionOne = ({
 }) => {
   const [updates, setUpdate] = useState("");
   const [changes, setChanges] = useState(false);
-  // console.log("Updates", updates);
+  console.log("getSubject", getSubject.subject);
   console.log("resId:-", resId);
   const token = useSelector((state) => state.Auth);
   // console.log("toekn in editsection:-",token)
+  const initialValues = {
+    subject: { vlaue: getSubject.subject, label: getSubject.subject },
+    first_anual_marks: getSubject.FA,
+    first_oral_marks: getSubject.OM1,
+    second_anual_marks: getSubject.BA,
+    second_oral_marks: getSubject.OM2,
+  };
   const {
     errors,
     handleChange,
@@ -95,7 +96,7 @@ const EditSectionOne = ({
         <div className="form-group">
           <div className="drop-down">
             <Select
-              placeholder={getSubject}
+              // placeholder={getSubject}
               options={options}
               onChange={(option) => setFieldValue("subject", option)}
               name="subject"

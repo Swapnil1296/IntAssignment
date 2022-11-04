@@ -12,14 +12,26 @@ const ResultTable = ({
   console.log("dataById:-", dataById);
   const [show, setShow] = useState(false);
   const [resId, setResId] = useState("");
-  const [getSubject, setSubject] = useState("");
+  const [getSubject, setSubject] = useState({
+    subject:"",
+    FA:"",
+    BA:"",
+    OM1:"",
+    OM2:""
+  });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const updateStudentDetails = (res_id, subject) => {
+  const updateStudentDetails = (res_id, subject, first_anual_marks,second_anual_marks,first_oral_marks,second_oral_marks) => {
     console.log("res_id:-", res_id);
     setResId(res_id);
-    setSubject(subject);
+    setSubject({
+      subject: subject,
+      FA: first_anual_marks,
+      BA: second_anual_marks,
+      OM1: first_oral_marks,
+      OM2: second_oral_marks,
+    });
     handleShow();
   };
   return (
@@ -58,7 +70,14 @@ const ResultTable = ({
                 <td>
                   <FaUserEdit
                     onClick={() =>
-                      updateStudentDetails(dataById.res_id, dataById.subject)
+                      updateStudentDetails(
+                        dataById.res_id,
+                        dataById.subject,
+                        dataById.first_anual_marks,
+                        dataById.second_anual_marks,
+                        dataById.first_oral_marks,
+                        dataById.second_oral_marks
+                      )
                     }
                   />
                 </td>
